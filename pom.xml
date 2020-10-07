@@ -93,21 +93,6 @@
 					</execution>
 				</executions>
 			</plugin>
-
-			<!-- to generate the MANIFEST-FILE of the bundle -->
-			<plugin>
-				<groupId>org.apache.felix</groupId>
-				<artifactId>maven-bundle-plugin</artifactId>
-				<version>3.5.1</version>
-				<extensions>true</extensions>
-				<configuration>
-					<instructions>
-						<Bundle-SymbolicName>org.apache.camel.camel-pftp</Bundle-SymbolicName>
-						<Export-Service>org.apache.camel.spi.ComponentResolver;component=pftp</Export-Service>
-					</instructions>
-				</configuration>
-			</plugin>
-
 		</plugins>
 	</build>
 
